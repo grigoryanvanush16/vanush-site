@@ -33,10 +33,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display font-bold leading-[0.85] tracking-tight"
           >
-            <span className="block text-[clamp(2.2rem,5.5vw,6rem)] text-content-primary">
+            <span className="block text-[clamp(2rem,5vw,5.5rem)] text-content-primary">
               VANUSH
             </span>
-            <span className="block text-[clamp(2.2rem,5.5vw,6rem)] gradient-text pb-2">
+            <span className="block text-[clamp(1.8rem,4.2vw,4.5rem)] gradient-text pb-2">
               GRIGORYAN
             </span>
           </motion.h1>
