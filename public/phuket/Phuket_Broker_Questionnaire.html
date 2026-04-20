@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Phuket Broker — 10 вопросов</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Inter, system-ui, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #1a1a1a;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 28px 64px;
+    background: #fafafa;
+  }
+  header {
+    border-bottom: 3px solid #1E3A5F;
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    color: #1E3A5F;
+    font-size: 22pt;
+    margin: 0 0 6px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .subtitle {
+    color: #555;
+    font-size: 10.5pt;
+    margin: 0;
+  }
+  .meta {
+    color: #888;
+    font-size: 9.5pt;
+    margin-top: 10px;
+  }
+  .intro {
+    background: #f1f4f9;
+    border-left: 4px solid #1E3A5F;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+    border-radius: 4px;
+    font-size: 10.5pt;
+  }
+  .intro strong { color: #1E3A5F; }
+  ol.questions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: q;
+  }
+  ol.questions > li {
+    counter-increment: q;
+    background: #fff;
+    border: 1px solid #e3e7ec;
+    border-radius: 6px;
+    padding: 16px 20px 18px 64px;
+    margin-bottom: 14px;
+    position: relative;
+    page-break-inside: avoid;
+  }
+  ol.questions > li::before {
+    content: counter(q);
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    width: 32px;
+    height: 32px;
+    background: #1E3A5F;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .q-title {
+    font-weight: 600;
+    color: #1E3A5F;
+    font-size: 11.5pt;
+    margin-bottom: 6px;
+  }
+  .q-body { color: #2c3e50; }
+  .q-body ul { margin: 6px 0 0 16px; padding: 0; }
+  .q-body ul li { margin-bottom: 2px; font-size: 10.5pt; }
+  .bonus {
+    background: #fff8ec;
+    border: 1px solid #e9d4a6;
+    border-radius: 6px;
+    padding: 14px 20px 16px 64px;
+    margin-top: 18px;
+    position: relative;
+  }
+  .bonus::before {
+    content: "★";
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    width: 32px;
+    height: 32px;
+    background: #b8860b;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bonus .q-title { color: #7a5a0a; }
+  footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 9pt;
+    text-align: center;
+  }
+  code {
+    background: #eef1f6;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    color: #1E3A5F;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Архитектура лидогенерации — 10 вопросов</h1>
+  <p class="subtitle">Короткая сверка перед запуском плана. Ответы — 1–3 предложения на пункт.</p>
+  <p class="meta">Для: Валерий · Пхукет · Investment Real Estate &nbsp;|&nbsp; От: Vanush &nbsp;|&nbsp; 2026-04-20</p>
+</header>
+
+<div class="intro">
+  <strong>Зачем это.</strong> Приложенный PDF (16 стр) — архитектура автономной системы генерации и скоринга лидов под твою модель. Внутри: 3 варианта стека (MVP $240 / Optimal $500 / Scalable $1800), 12-недельный план запуска, red-team аудит юридики (Supreme Court leasehold, OFAC, PDPA), мультиканал (Google Ads + CTWA + YouTube + Telegram RU + B2B), готовые артефакты (квиз 7 вопросов, GPT-промпт скоринга, email drip).<br><br>
+  <strong>Что от тебя нужно.</strong> Прочитай PDF и ответь коротко по пунктам ниже. По твоим ответам откалибруем план, уберём лишнее и углубим то, что нужно.
+</div>
+
+<ol class="questions">
+
+  <li>
+    <div class="q-title">Приоритетный сегмент</div>
+    <div class="q-body">С каким языком стартуем первым — <strong>EN HNWI</strong> (Google + YouTube EN + LinkedIn) или <strong>RU релоканты</strong> (Telegram + YouTube RU + Яндекс)? От этого зависит, куда идёт 70% времени и денег первые 3 месяца.</div>
+  </li>
+
+  <li>
+    <div class="q-title">Позиционирование</div>
+    <div class="q-body">«Due diligence broker + русский взгляд на западных покупателей и наоборот» — заходит? Или видишь себя иначе — luxury-специалист, off-plan инвест-брокер, Russian-speaking concierge?</div>
+  </li>
+
+  <li>
+    <div class="q-title">Реальный бюджет</div>
+    <div class="q-body">Cap на первые 3 мес <strong>без учёта рекламы</strong>: $250 / $500 / $1500 в месяц? Отдельно: готов ли на <strong>$2–4K/мес paid ads</strong> с месяца 3?</div>
+  </li>
+
+  <li>
+    <div class="q-title">Аутсорс</div>
+    <div class="q-body">
+      <ul>
+        <li>Видеомонтаж ($400–800/мес Fiverr/Upwork) — <em>в план</em> или <em>сам монтируешь</em>?</li>
+        <li>Mandarin VA ($400–700) для China-сегмента — сейчас или отложить на мес 7+?</li>
+        <li>Part-time DPO (15–30K THB/мес) — внешний или внутри Thai Ltd?</li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <div class="q-title">Ты на камере</div>
+    <div class="q-body">Готов быть лицом YouTube/Reels (property tours, market updates) или нужен off-camera формат (голос + b-roll, анимация, приглашённые эксперты)?</div>
+  </li>
+
+  <li>
+    <div class="q-title">Юридический статус — уточнения</div>
+    <div class="q-body">
+      <ul>
+        <li>Thai Ltd — сколько месяцев работает, <strong>VAT уже registered</strong>?</li>
+        <li>Договоры с Title / Sansiri / Origin / Botanica — прямые или через старое агентство пока?</li>
+        <li>Какие клиенты / сделки / testimonials уже есть? Даже 1 закрытая сделка = сильный актив для E-E-A-T.</li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <div class="q-title">Что ОТРЕЗАЕМ из плана</div>
+    <div class="q-body">Что «точно нет» или «не сейчас»? Варианты для отсеивания: SEO-сайт, China-сегмент, LinkedIn B2B, webinars, podcast guesting, Telegram Ads, Meta CTWA.</div>
+  </li>
+
+  <li>
+    <div class="q-title">Что ХОЧЕТСЯ ГЛУБЖЕ</div>
+    <div class="q-body">Какой блок развернуть детальнее?
+      <ul>
+        <li>Квиз + AI-скоринг (промпты, вопросы)</li>
+        <li>B2B-outreach (шаблоны писем, кого контактить первым)</li>
+        <li>Юридика операций (договоры, налоги, AMLO)</li>
+        <li>Контент-календарь YouTube (первые 20 видео с темами)</li>
+        <li>SEO (tech setup, content plan)</li>
+        <li>Другое</li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <div class="q-title">Timeline и терпение</div>
+    <div class="q-body"><strong>12 недель на MVP</strong> (без лидов первые 2 мес) — ок? Или нужна быстрая стратегия на первую сделку через B2B-рефералов параллельно с построением воронки?</div>
+  </li>
+
+  <li>
+    <div class="q-title">Партнёрство или найм</div>
+    <div class="q-body">Готов работать один до первой сделки или нужен партнёр / ассистент сразу (продажник, SMM, юрист на part-time)?</div>
+  </li>
+
+</ol>
+
+<div class="bonus">
+  <div class="q-title">Бонус — ICP</div>
+  <div class="q-body">Опиши <strong>1 идеального клиента</strong> из тех, с кем уже работал (или мечтаешь работать). Возраст, страна, бюджет, цель покупки, как нашёл тебя. Это откалибрует квиз и портрет ICP.</div>
+</div>
+
+<footer>
+  Phuket Broker Project &nbsp;·&nbsp; Архитектура v2 в приложенном PDF &nbsp;·&nbsp; AI Hub
+</footer>
+
+</body>
+</html>
